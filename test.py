@@ -2,6 +2,12 @@ import subprocess
 import json
 import time
 from pprint import pprint
+from colorama import init as colorama_init
+from colorama import Fore
+from colorama import Style
+
+
+
 
 def runtest(i):
     out = open("output.json")
@@ -22,18 +28,18 @@ def assertequals(i):
 
 def runtests():
     for i in range(1):
-        print(" - Test {} : ".format(i+1))
+        print(" - Test {} : ".format(i+1), end=" ")
         time.sleep(1)
         runtest(i)
         time.sleep(1)
         if assertequals(i):
-            print("Passed")
+            print(f"{Fore.GREEN}Passed{Style.RESET_ALL}")
         else:
             o, e = dumpjson(i)
-            print("Failed")
-            print("Output :")
+            print(f"{Fore.RED}Failed{Style.RESET_ALL}")
+            print("Output : ", end=" ")
             pprint(o,indent=4)
-            print("Expected : ")
+            print("Expected : ", end=" ")
             pprint(e,indent=4)
         print("======================================================================================")
         
@@ -44,10 +50,9 @@ def runtests():
 
 def run_java_program(args):
     command = ['java','-jar','Formation.jar'] + args
-    
+
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-   
     output, error = process.communicate()
 
     output = output.decode('utf-8')
@@ -56,6 +61,7 @@ def run_java_program(args):
     return output, error
 
 if __name__ == "__main__":
+    colorama_init()
     runtests()
 
 
