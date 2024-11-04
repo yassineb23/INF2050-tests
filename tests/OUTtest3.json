@@ -1,4 +1,4 @@
 {
-    "complet":false,
-    "erreurs":"L'activité Cours a été suivi dans un intervalle non considéré. Elle sera ignorée"
+    "complet":true,
+    "erreurs": ["L'activité cours a été suivi dans un intervalle non considéré. Elle sera ignorée"]
  }

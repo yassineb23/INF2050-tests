@@ -2,7 +2,7 @@
     "ordre": "architectes",
     "numero_de_permis": "A1234",
     "cycle": "2020-2022",
-    "heures_transferees_du_cycle_precedent": 0,
+    "heures_transferees_du_cycle_precedent": 7,
     "activites": [
         {
             "description": "123456789ABCDEF12345674",
@@ -19,13 +19,13 @@
         {
             "description": "123456789ABCDEF12345674",
             "categorie": "conférence",
-            "heures": 5,
+            "heures": 7,
             "date": "2020-06-05"
         },
         {
             "description": "123456789ABCDEF12345674",
             "categorie": "présentation",
-            "heures": 5,
+            "heures": 8,
             "date": "2020-06-05"
         },
         {

@@ -2,13 +2,37 @@
     "ordre": "architectes",
     "numero_de_permis": "A1234",
     "cycle": "2020-2022",
-    "heures_transferees_du_cycle_precedent": 0,
+    "heures_transferees_du_cycle_precedent": 6,
     "activites": [
         {
             "description": "123456789ABCDEF12345674",
-            "categorie": "Cours",
-            "heures": 0,
+            "categorie": "cours",
+            "heures": 14,
             "date": "2020-03-25"
+        },
+        {
+            "description": "123456789ABCDEF12345674",
+            "categorie": "atelier",
+            "heures": 20,
+            "date": "2020-06-25"
+        },
+        {
+            "description": "123456789ABCDEF12345674",
+            "categorie": "colloque",
+            "heures": 11,
+            "date": "2020-06-13"
+        },
+        {
+            "description": "123456789ABCDEF12345674",
+            "categorie": "séminaire",
+            "heures": 20,
+            "date": "2020-06-28"
+        },
+        {
+            "description": "123456789ABCDEF12345674",
+            "categorie": "présentation",
+            "heures": 20,
+            "date": "2020-06-28"
         }
     ]
 }

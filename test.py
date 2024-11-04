@@ -10,7 +10,7 @@ from colorama import Style
 
 
 def runtest(i):
-    out = open("output.json")
+    out = open("output.json","w")
     args =  ['tests/test{}.json'.format(i), 'output.json']
     o, e = run_java_program(args)
     if e:
