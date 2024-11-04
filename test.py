@@ -5,6 +5,8 @@ from pprint import pprint
 from colorama import init as colorama_init
 from colorama import Fore
 from colorama import Style
+import pip
+import sys
 
 
 
@@ -58,6 +60,9 @@ def run_java_program(args):
     return output, error
 
 if __name__ == "__main__":
+    pack = "colorama"
+    if not pack in sys.modules:
+        pip.main(["install ",pack])
     colorama_init()
     runtests()
 
