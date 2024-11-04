@@ -27,11 +27,10 @@ def assertequals(i):
     return o == e
 
 def runtests():
-    for i in range(1):
+    for i in range(7):
         print(" - Test {} : ".format(i+1), end=" ")
         time.sleep(1)
         runtest(i)
-        time.sleep(1)
         if assertequals(i):
             print(f"{Fore.GREEN}Passed{Style.RESET_ALL}")
         else:
@@ -55,8 +54,6 @@ def run_java_program(args):
 
     output, error = process.communicate()
 
-    output = output.decode('utf-8')
-    error = error.decode('utf-8')
 
     return output, error
 

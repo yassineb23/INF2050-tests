@@ -1,38 +1,14 @@
 {
-    "ordre": "",
-    "numero_de_permis": "",
-    "cycle": "",
+    "ordre": "architectes",
+    "numero_de_permis": "A1234",
+    "cycle": "2020-2022",
     "heures_transferees_du_cycle_precedent": 0,
     "activites": [
         {
-            "description": "",
-            "categorie": "",
-            "heures": 0,
-            "date": ""
-        },
-        {
-            "description": "",
-            "categorie": "",
-            "heures": 0,
-            "date": ""
-        },
-        {
-            "description": "",
-            "categorie": "",
-            "heures": 0,
-            "date": ""
-        },
-        {
-            "description": "",
-            "categorie": "",
-            "heures": 0,
-            "date": ""
-        },
-        {
-            "description": "",
-            "categorie": "",
-            "heures": 0,
-            "date": ""
+            "description": "a",
+            "categorie": "Cours",
+            "heures": 2,
+            "date": "2020-06-05"
         }
     ]
 }

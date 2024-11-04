@@ -1,33 +1,9 @@
 {
-    "ordre": "",
-    "numero_de_permis": "",
+    "ordre": "architectes",
+    "numero_de_permis": "X1234",
     "cycle": "",
     "heures_transferees_du_cycle_precedent": 0,
     "activites": [
-        {
-            "description": "",
-            "categorie": "",
-            "heures": 0,
-            "date": ""
-        },
-        {
-            "description": "",
-            "categorie": "",
-            "heures": 0,
-            "date": ""
-        },
-        {
-            "description": "",
-            "categorie": "",
-            "heures": 0,
-            "date": ""
-        },
-        {
-            "description": "",
-            "categorie": "",
-            "heures": 0,
-            "date": ""
-        },
         {
             "description": "",
             "categorie": "",
