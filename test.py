@@ -12,14 +12,14 @@ import sys
 
 
 def runtest(i):
-    out = open("output.json","w")
+    out = open("output.json","w",encoding="utf8")
     args =  ['tests/test{}.json'.format(i), 'output.json']
     o, e = run_java_program(args)
     if e:
         print("Erreur JAVA : {}".format(e))
 
 def dumpjson(i):
-    with open("output.json") as out, open("tests/OUTtest{}.json".format(i)) as expected: 
+    with open("output.json",encoding="utf8") as out, open("tests/OUTtest{}.json".format(i),encoding="utf8") as expected: 
         o = json.load(out)
         e = json.load(expected)
     return o , e
@@ -59,10 +59,7 @@ def run_java_program(args):
 
     return output, error
 
-if __name__ == "__main__":
-    pack = "colorama"
-    if not pack in sys.modules:
-        pip.main(["install ",pack])
+if __name__ == "__main__":    
     colorama_init()
     runtests()
 
